@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    box-sizing: border-box;
+    font-family: 'inter', 'sans-serif';
+    font-size: 16px;
+}
+
+/* typography */
+h1{
+    @apply font-semibold text-4xl mb-6 lg:text-6xl
+}
+h2{
+    @apply font-semibold text-3xl mb-5 lg:text-4xl
+}
+h3{
+    @apply font-semibold text-lg lg:text-xl 
+}
+h4{
+    @apply font-normal text-gray-600 text-lg lg:text-xl
+}
+h5{
+    @apply text-brightPurple font-semibold text-base mb-3
+}
+p{
+    @apply font-normal text-gray-600 text-base
+}
+
+/* buttons */
+.purple-button{
+    @apply bg-brightPurple text-white rounded-lg font-semibold
+}
+.white-button{
+    @apply bg-white text-gray-700 rounded-lg font-semibold
+}
+
+
+
+/* card */
+.box{
+    box-shadow: 0px 12px 16px -4px rgba(16, 24, 40, 0.08), 0px 4px 6px -2px rgba(16, 24, 40, 0.03);
+    @apply container border rounded-2xl
+}
+
+/* container */
+.container-centre{
+    @apply mx-4 md:container md:mx-auto
+}
+.two-thirds-width{
+    @apply container lg:w-2/3
+}
+.flex-r{
+    @apply lg:flex lg:flex-row
+}
+.flex-c{
+    @apply lg:flex lg:flex-col
+}
+
+/* padding and margins */
+
+.pad-y-96{
+    @apply py-16 lg:py-24
+}
+.pad-b-96{
+    @apply pb-16 lg:pb-24
+}
