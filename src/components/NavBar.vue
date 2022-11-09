@@ -28,8 +28,10 @@
         <a href="" class="py-2.5 px-5 white-button">Login</a>
         <a href="" class="py-2.5 px-5 purple-button">Signup</a>
       </div>
-
       <!-- hamburger -->
+      <button class="lg:hidden absolute top-0 right-0">
+        <i class="fa-solid fa-bars"></i>
+      </button>
     </div>
   </nav>
 </template>

@@ -44,7 +44,7 @@
   >
     <div class="flex-c mx-16">
       <h4 class="mb-11 text-center">Trusted by 4,000+ companies</h4>
-      <div class="grid grid-cols-2 justify-between flex-r">
+      <div class="grid grid-cols-2 text-center justify-between flex-r">
         <i v-for="icon in icons" :key="icon.id"
           ><i class="fa-regular fa-circle" />{{ icon.name }}</i
         >
@@ -92,7 +92,7 @@
   </section>
 
   <!-- more features -->
-  <section class="mb-16">
+  <section class="mb-16 mt-4">
     <div class="text-center two-thirds-width mx-auto">
       <h5>Features</h5>
       <h2 class="mb-5">All-in-one finance for any business</h2>
@@ -119,7 +119,7 @@
   </section>
 
   <!-- Pricing section -->
-  <section class="container-centre pad-y-96">
+  <section class="container-centre mb-16 lg:mb-24">
     <article class="pb-12">
       <h5>Upgrade</h5>
       <h2>Pricing as simple as our cards</h2>
@@ -132,7 +132,7 @@
     <div class="flex-r gap-24">
       <!-- features -->
       <div class="my-auto">
-        <section class="flex-c gap-y-14">
+        <section class="flex-c gap-y-14 my-12">
           <article
             v-for="feature in features"
             :key="feature.id"
@@ -184,7 +184,11 @@
           <div class="flex flex-row">
             <h2 class="mb-0">$</h2>
             <h1>10</h1>
-            <p class="font-medium whitespace-nowrap">per month</p>
+            <div class="flex">
+              <p class="font-medium whitespace-nowrap align-bottom">
+                per month
+              </p>
+            </div>
           </div>
         </div>
 
@@ -198,12 +202,7 @@
           </article>
 
           <div
-            class="
-              flex-c
-              space-y-4
-              md:grid md:grid-cols-2 md:gap-y-4 md:gap-x-8
-              mb-10
-            "
+            class="flex-c md:grid md:grid-cols-2 md:gap-y-4 md:gap-x-8 mb-10"
           >
             <p v-for="feature in cardFeatures" :key="feature.id">
               <i class="fa-regular fa-circle-check text-green-400" />
@@ -235,7 +234,7 @@
       lg:mb-24
     "
   >
-    <div class="container-centre my-20 md:mx-16 md:text-2xl">
+    <div class="container-centre my-10 md:mx-16 md:text-2xl">
       <article>
         <div class="flex text-yellow-400">
           <i class="fa-regular fa-star fa-filled" />
@@ -244,7 +243,7 @@
           <i class="fa-regular fa-star" />
           <i class="fa-regular fa-star" />
         </div>
-        <h2 class="pt-6 pb-8 mb-0">
+        <h2 class="pt-4 pb-8 mb-0 lg:pt-6">
           Love the simplicity of the service and the prompt customer support. We
           can’t imagine working without it.
         </h2>
@@ -255,7 +254,7 @@
           <p class="text-white">Product Designer, Quotient</p>
         </div>
         <div>
-          <i class="fa-solid fa-ellipsis fa-2x"></i>
+          <i class="fa-solid fa-ellipsis fa-2x" />
         </div>
       </article>
     </div>
@@ -264,7 +263,7 @@
         container-centre
         testimonial
         rounded-r-2xl
-        flex
+        lg:flex
         justify-center
         items-center
       "
