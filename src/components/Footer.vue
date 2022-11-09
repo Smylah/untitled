@@ -84,15 +84,21 @@
       <p>&copy; 2077 Untitled UI. All rights reserved</p>
       <!-- icons -->
 
-      <div class="space-x-8">
-        <a
+      <div class="space-x-8 fa-lg text-gray-600">
+        <!-- <a
           v-for="icon in icons"
           :key="icon.id"
           href="`${icon.logo}`"
           class="h-6 w-6 border"
         >
-          i
-        </a>
+          <i class="`${icon.logo}`" />
+        </a> -->
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-linkedin"></i>
+        <i class="fa-brands fa-github"></i>
+        <i class="fa-brands fa-dribbble"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-angellist"></i>
       </div>
     </section>
   </footer>
@@ -169,12 +175,12 @@ export default defineComponent({
         },
       ] as Array<linksdata>,
       icons: [
-        { name: "facebook", logo: "#", id: 1 },
-        { name: "github", logo: "#", id: 2 },
-        { name: "twitter", logo: "#", id: 3 },
-        { name: "dribble", logo: "#", id: 4 },
-        { name: "last", logo: "#", id: 5 },
-        { name: "linkedin", logo: "#", id: 6 },
+        { name: "facebook", logo: "fa-brands fa-facebook", id: 1 },
+        { name: "github", logo: "fa-brands fa-github", id: 2 },
+        { name: "twitter", logo: "fa-brands fa-twitter", id: 3 },
+        { name: "dribble", logo: "fa-brands fa-dribbble", id: 4 },
+        { name: "last", logo: "fa-regular fa-circle", id: 5 },
+        { name: "linkedin", logo: "fa-brands fa-linkedin", id: 6 },
       ] as Array<icon>,
     };
   },

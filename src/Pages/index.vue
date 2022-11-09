@@ -17,12 +17,18 @@
             md:space-x-3 md:flex-row md:flex
           "
         >
-          <a href="#" class="py-4 px-7 white-button border">Demo</a>
+          <a href="#" class="py-4 px-7 white-button border"
+            ><i class="fa-regular fa-circle-play"></i>Demo</a
+          >
           <a href="#" class="py-4 px-7 purple-button">Signup</a>
         </div>
       </article>
     </div>
-    <img src="" alt="" class="h-96 w-full border md:container md:mx-auto" />
+    <img
+      src="../assets/blocks-g7NfqV6C074-unsplash.jpg"
+      alt=""
+      class="h-96 w-full border md:container md:mx-auto"
+    />
   </section>
 
   <!-- social proof section -->
@@ -39,7 +45,9 @@
     <div class="flex-c mx-16">
       <h4 class="mb-11 text-center">Trusted by 4,000+ companies</h4>
       <div class="grid grid-cols-2 justify-between flex-r">
-        <i v-for="icon in icons" :key="icon.id">{{ icon.name }}</i>
+        <i v-for="icon in icons" :key="icon.id"
+          ><i class="fa-regular fa-circle" />{{ icon.name }}</i
+        >
       </div>
     </div>
   </section>
@@ -55,7 +63,7 @@
       </h4>
     </div>
   </section>
-  <section class="flex-r border-b md:container pad-b-96 md:mx-auto">
+  <section class="flex-r md:border-b md:container pad-b-96 md:mx-auto">
     <div class="container-centre pad-b-96">
       <article
         v-for="feature in features"
@@ -70,11 +78,17 @@
           {{ feature.expand }}
         </p>
         <h5 class="mb-0">
-          <a href="#" class="ml-6"> Learn More <span>></span> </a>
+          <a href="#" class="ml-6">
+            Learn More <i class="fa-solid fa-arrow-right"
+          /></a>
         </h5>
       </article>
     </div>
-    <img src="#" alt="" class="border pad-b-96 md:container md:mx-auto" />
+    <img
+      src="../assets/emil-kalibradov-a4maTFz1QPc-unsplash.jpg"
+      alt=""
+      class="img-feature pad-b-96 md:container md:mx-auto md:p-0"
+    />
   </section>
 
   <!-- more features -->
@@ -88,7 +102,11 @@
       </h4>
     </div>
   </section>
-  <img src="" alt="" class="border h-96 md:container md:mx-auto" />
+  <img
+    src="../assets/avery-evans-RJQE64NmC_o-unsplash.jpg"
+    alt=""
+    class="border h-96 md:container md:mx-auto"
+  />
   <section class="mx-auto text-center py-24 bg-gray-50">
     <article class="mb-10 container-centre">
       <h2>Start your 30-day free trial</h2>
@@ -113,14 +131,14 @@
 
     <div class="flex-r gap-24">
       <!-- features -->
-      <div class="my-auto sm:mb-12">
-        <section class="flex-c gap-y-14 sm:">
+      <div class="my-auto">
+        <section class="flex-c gap-y-14">
           <article
             v-for="feature in features"
             :key="feature.id"
             class="flex flex-row gap-x-4"
           >
-            <img src="#" class="w-12 h-12" />
+            <i class="w-12 h-12 fa-solid fa-comments"></i>
             <div>
               <h3 class="mb-2">{{ feature.name }}</h3>
               <p>
@@ -188,7 +206,7 @@
             "
           >
             <p v-for="feature in cardFeatures" :key="feature.id">
-              <span class="w-6 h-6 border mr-3"></span>
+              <i class="fa-regular fa-circle-check text-green-400" />
               {{ feature.name }}
             </p>
           </div>
@@ -217,9 +235,15 @@
       lg:mb-24
     "
   >
-    <div class="container-centre my-20 md:mx-16">
+    <div class="container-centre my-20 md:mx-16 md:text-2xl">
       <article>
-        <div>stars</div>
+        <div class="flex text-yellow-400">
+          <i class="fa-regular fa-star fa-filled" />
+          <i class="fa-regular fa-star" />
+          <i class="fa-regular fa-star" />
+          <i class="fa-regular fa-star" />
+          <i class="fa-regular fa-star" />
+        </div>
         <h2 class="pt-6 pb-8 mb-0">
           Love the simplicity of the service and the prompt customer support. We
           can’t imagine working without it.
@@ -230,10 +254,23 @@
           </p>
           <p class="text-white">Product Designer, Quotient</p>
         </div>
-        <div>...</div>
+        <div>
+          <i class="fa-solid fa-ellipsis fa-2x"></i>
+        </div>
       </article>
     </div>
-    <img src="#" alt="a woman" class="container-centre rounded-r-2xl" />
+    <div
+      class="
+        container-centre
+        testimonial
+        rounded-r-2xl
+        flex
+        justify-center
+        items-center
+      "
+    >
+      <i class="fa-solid fa-circle-play fa-6x"></i>
+    </div>
   </section>
 
   <!-- CTA section -->

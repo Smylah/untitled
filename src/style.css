@@ -66,3 +66,14 @@ p{
 .pad-b-96{
     @apply pb-16 lg:pb-24
 }
+
+/* image */
+.testimonial{
+    background: url(../src/assets/mathilde-langevin-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.img-feature{
+    width: 576px;
+    height: 640px;
+}

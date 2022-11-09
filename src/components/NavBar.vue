@@ -19,8 +19,8 @@
       <!-- nav-links -->
       <div class="container hidden justify-start space-x-8 flex-r">
         <a href="">Home</a>
-        <a href="">Products</a>
-        <a href="">Resources</a>
+        <a href="">Products<i class="fa-solid fa-chevron-down" /></a>
+        <a href="">Resources<i class="fa-solid fa-chevron-down" /></a>
         <a href="">Pricing</a>
       </div>
       <!-- signup and login -->
