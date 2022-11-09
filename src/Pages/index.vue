@@ -236,7 +236,7 @@
   >
     <div class="container-centre my-10 md:mx-16 md:text-2xl">
       <article>
-        <div class="flex text-yellow-400">
+        <div class="flex pt-10 text-yellow-400 lg:pt-0">
           <i class="fa-regular fa-star fa-filled" />
           <i class="fa-regular fa-star" />
           <i class="fa-regular fa-star" />
@@ -260,15 +260,15 @@
     </div>
     <div
       class="
-        container-centre
         testimonial
-        rounded-r-2xl
-        lg:flex
+        h-96 h-testimonial
         justify-center
         items-center
+        rounded-b-2xl
+        lg:rounded-r-2xl lg:container lg:flex
       "
     >
-      <i class="fa-solid fa-circle-play fa-6x"></i>
+      <i class="fa-solid hidden fa-circle-play fa-6x lg:block"></i>
     </div>
   </section>
 

@@ -83,7 +83,8 @@ i{
 
 
 @media (min-width: 1148px) {
-    .lg\:flex {
-        display: flex;
+    .h-testimonial {
+        height: 506px;
+        border-radius: 0 16px 16px 0;
     }
 }
